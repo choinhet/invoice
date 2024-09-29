@@ -6,3 +6,6 @@ tasks:
   run:
     cmds:
       - streamlit run invoice/app.py
+  requirements:
+    cmds:
+      - uv pip compile pyproject.toml -o requirements.txt
