@@ -1,0 +1,26 @@
+[project]
+name = "invoice"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "aiohttp>=3.10.8",
+    "numpy>=2.1.1",
+    "pandas>=2.2.3",
+    "pydantic>=2.9.2",
+    "python-dotenv>=1.0.1",
+    "streamlit>=1.38.0",
+    "streamlit-extras>=0.4.7",
+    "toolz>=0.12.1",
+    "cryptography>=43.0.1",
+    "toml>=0.10.2",
+    "aiofile>=3.8.8",
+    "rich>=13.8.1",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "ipython>=8.27.0",
+    "pyright>=1.1.382.post1",
+]
