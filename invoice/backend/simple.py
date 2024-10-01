@@ -33,7 +33,7 @@ async def gen_data():
     cover_period = f"1st-{last_day.day}st {adjusted_date.strftime('%B')}"
 
     return {
-        "number": "RC" + str(current_number).zfill(4),
+        "number": "RC" + str(current_number + 2).zfill(4),
         "from": await get_element("details", "from"),
         "to": await get_element("details", "bill_to"),
         "terms": await get_element("details", "terms"),
